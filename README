@@ -1,0 +1,7 @@
+
+
+## Building Docker image
+docker image build --tag $DOCKERID/text-notifications:1.0 .
+
+## Running the container
+docker container run -d --rm --name "text-notifications" -p 80:5000 $DOCKERID/text-notifications:1.0
